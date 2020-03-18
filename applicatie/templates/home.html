@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "layout.html" %}
+{% block content %}
+    <div class="home">
+              <body>
+            <label for="maanden">kies een maand: </label>
+            <select id="maanden" name= maanden method="GET" action="/">
+                {% for maand in keuze %}
+                    <option value= "{{gekozen}}" SELECTED> {{maand}}</option>"
+                {% endfor %}
+            </select>
+            <label for="beginjaar">kies een begin-jaar: </label>
+            <select id="beginjaar" name= beginjaar method="GET" action="/">
+                {% for jaar in keuze_jaren %}
+                    <option value= "{{gekozen_beginjaar}}" SELECTED> {{jaar}}</option>"
+                {% endfor %}
+            </select>
+            <!--h3> Overzichten van het Waaienbergse weer</h3-->
+        </body>
+    </div>
+{% endblock %}
+</html>

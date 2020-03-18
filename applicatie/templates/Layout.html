@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Weerstation van Theo Grivel</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+             <div>
+                <img src="{{url_for('static', filename='images/weerstation_klein.jpg')}}"
+                     alt="plaatje WS" height="100" width="80" style="float: left">
+            </div>
+            <br>
+            <h1 class="logo">  Theo's weer station</h1>
+            <strong><nav>
+                <ul class="menu">
+                    <li><a href="{{url_for('home') }}">Home</a></li>
+                    <li><a href="{{url_for('about') }}">About</a></li>
+                    <div>    </div>
+                </ul>
+            </nav></strong>
+        </div>
+    </header>
+    <dic class="container">
+        {% block content %}
+        {% endblock %}
+    </dic>
+</body>
+</html>
