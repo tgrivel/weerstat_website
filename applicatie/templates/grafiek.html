@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "layout.html" %}
+{% block content %}
+    <!-- h1>Grafiek</h1 -->
+    <div class="grafiek">
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <body>
+            <p>
+                {{ form.maand.label }}
+                {{ form.maand}}
+
+                {{ form.start_jaar.label }}
+                {{ form.start_jaar}}
+
+                {{ form.eind_jaar.label }}
+                {{ form.eind_jaar}}
+
+                {{ form.submit() }}
+            </p>
+            <p>
+            {{ form.tekst }}
+            </p>
+            </body>
+        </form>
+    </div>
+
+{% endblock %}
+</html>

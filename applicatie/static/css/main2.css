@@ -1,0 +1,36 @@
+    body {
+      margin: 10px;
+      padding: 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #444;
+      margin-left: 35px;
+    }
+    label{
+    margin-left:20px;
+    }
+    .menu {
+      float: right;
+      margin-top: 8px;
+    }
+    .menu li {
+      display: inline;
+    }
+    .menu li + li {
+      margin-left: 35px;
+      margin-right: 35px;
+    }
+    .menu li a {
+      color: #444;
+      text-decoration: none;
+    }
+    .grafiek2{
+        padding: 10px 0 30px 0;
+        background-color: #E6E6FA;
+        label.color: red
+    }
+    .grafiek2 h1{
+        color:red
+    }
+    .grafiek2 label{
+        color:red
+    }

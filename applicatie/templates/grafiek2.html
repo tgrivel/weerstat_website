@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "layout.html" %}
+{% block content %}
+    <div class = 'grafiek2'>
+        <body>
+            <label for="maanden">kies een maand: </label>
+            <select id="maanden" name= maanden method="POST" action="/">
+                {% for maand in keuze %}
+                    <option value= "{{gekozen}}" SELECTED> {{maand}}</option>"
+                {% endfor %}
+            </select>
+            <label for="beginjaar">kies een begin-jaar: </label>
+            <select id="beginjaar" name= beginjaar method="POST" action="/">
+                {% for jaar in keuze_jaren %}
+                    <option value= "{{gekozen_beginjaar}}" SELECTED> {{jaar}}</option>"
+                {% endfor %}
+            </select>
+            <input type="button" name="starten_maar" value="maak grafieken" method = 'GET'>
+            <button type = "submit" class="btn btn-default" title="klik om te starten">Starten maar </button>
+        </body>
+    </div>
+{% endblock %}
+</html>
+

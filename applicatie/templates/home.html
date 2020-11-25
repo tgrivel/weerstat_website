@@ -3,8 +3,8 @@
 {% extends "layout.html" %}
 {% block content %}
     <div class="home">
-              <body>
-            <label for="maanden">kies een maand: </label>
+        <body>
+            <!--<label for="maanden">kies een maand: </label>
             <select id="maanden" name= maanden method="GET" action="/">
                 {% for maand in keuze %}
                     <option value= "{{gekozen}}" SELECTED> {{maand}}</option>"
@@ -15,9 +15,12 @@
                 {% for jaar in keuze_jaren %}
                     <option value= "{{gekozen_beginjaar}}" SELECTED> {{jaar}}</option>"
                 {% endfor %}
-            </select>
-            <!--h3> Overzichten van het Waaienbergse weer</h3-->
-        </body>
+            </select> -->
+
+            <h3> Overzichten van het Waaienbergse weer.</h3>
+
+         </body>
     </div>
+    <div class = "zon"> zon op:{{ zon_op }}  zon onder: {{zon_onder}} </div>
 {% endblock %}
 </html>
